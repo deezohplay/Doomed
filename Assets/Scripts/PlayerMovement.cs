@@ -46,7 +46,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-
     void FixedUpdate()
     {
         // Apply movement
