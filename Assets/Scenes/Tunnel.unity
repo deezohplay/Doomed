@@ -852,6 +852,7 @@ GameObject:
   - component: {fileID: 456899872}
   - component: {fileID: 456899873}
   - component: {fileID: 456899874}
+  - component: {fileID: 456899875}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1017,6 +1018,23 @@ MonoBehaviour:
   joystick: {fileID: 1638016400}
   rb: {fileID: 456899872}
   rotationSpeed: 5
+--- !u!114 &456899875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456899867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9056a8641c9de4892bd354c7e3b7d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1499760041}
+  mask:
+    serializedVersion: 2
+    m_Bits: 64
+  distance: 3
 --- !u!1 &546442772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,7 +1047,7 @@ GameObject:
   - component: {fileID: 546442775}
   - component: {fileID: 546442774}
   - component: {fileID: 546442773}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1962,7 +1980,11 @@ MonoBehaviour:
   firePoint: {fileID: 375758124}
   fireRate: 0.2
   gunShotSound: {fileID: 0}
+  nextFireTime: 0
+  audioSource: {fileID: 0}
+  recoilKickback: {x: 0, y: 0, z: 0}
   recoilRecoverySpeed: 8
+  originalPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &1306310386
 GameObject:
   m_ObjectHideFlags: 0
